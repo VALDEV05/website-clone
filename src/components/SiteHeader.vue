@@ -1,12 +1,16 @@
 <template>
   <header id="site-header">
-    header-component
+    <TopHeader></TopHeader>
+    header
   </header>
 </template>
 
 <script>
+import TopHeader from './TopHeader.vue';
 export default {
-
+  components:{
+    TopHeader
+  }
 }
 </script>
 
