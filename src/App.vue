@@ -2,7 +2,7 @@
   <SiteHeader></SiteHeader>
   <!-- /#site-header -->
    <main id="site-main">
-    main  
+    <div class="btn btn-primary">main</div>
   </main>
   <!-- /#site-main -->
    <footer id="site-footer">
@@ -13,7 +13,6 @@
 
 <script>
 import SiteHeader from './components/SiteHeader.vue'
-//import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
