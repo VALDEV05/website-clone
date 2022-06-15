@@ -1,19 +1,17 @@
 <template>
   <header id="site-header">
     <TopHeader></TopHeader>
-    header
+    <HeaderAnimation></HeaderAnimation>
   </header>
 </template>
 
 <script>
 import TopHeader from './TopHeader.vue';
+import HeaderAnimation from './HeaderAnimation.vue'
 export default {
   components:{
-    TopHeader
+    TopHeader,
+    HeaderAnimation
   }
 }
 </script>
-
-<style>
-
-</style>

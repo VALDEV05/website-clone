@@ -20,9 +20,3 @@
 <script>
 export default {};
 </script>
-
-<style lang="scss">
-.cls-1 {
-  fill: #fff;
-}
-</style>

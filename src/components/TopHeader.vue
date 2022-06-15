@@ -45,52 +45,8 @@ import icon_position from "./icon/icon_position.vue"
 export default {
   components: {
     icon_mail,
-	icon_clock,
-	icon_position
+	  icon_clock,
+	  icon_position
   },
 };
 </script>
-
-<style lang="scss">
-$white: #fff;
-
-#top-header {
-  width: 100%;
-  height: 62px;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  .menu-top-header {
-    margin: 0px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    .left-menu {
-      display: flex;
-      align-items: center;
-      .menu-item {
-        color: $white;
-        display: flex;
-        align-items: center;
-        margin: 0px 20px;
-        .icon-wrap {
-          width: 37px;
-          height: 37px;
-          aspect-ratio: 1/1;
-          background-color: rgba(0, 0, 0, 0.8);
-          border-radius: 8%;
-          margin-right: 10px;
-        }
-      }
-    }
-    .right-menu {
-      .btn-contattaci-top-header {
-        background: #fff;
-        padding: 5px 15px;
-        border-radius: 9rem;
-      }
-    }
-  }
-}
-</style>
