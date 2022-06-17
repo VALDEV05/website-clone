@@ -32,6 +32,10 @@ body {
     position: relative;
 }
 
+body * {
+    list-style: none;
+}
+
 
 /* COLORS */
 
@@ -106,45 +110,54 @@ svg {
    5.0 - Header
    ========================================================================== */
 
+$height-variables: 62px;
 
 /* 5.1 - Top-Header */
 
-#top-header {
-    width: 100%;
-    height: 62px;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    .menu-top-header {
-        margin: 0px 5%;
+#site-header {
+    #top-header {
+        width: 100%;
+        height: $height-variables;
+        background-color: rgba(0, 0, 0, 0.7);
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        .left-menu {
+        .menu-top-header {
+            margin: 0px 5%;
             display: flex;
             align-items: center;
-            .menu-item {
-                color: $white;
+            justify-content: space-between;
+            width: 100%;
+            .left-menu {
                 display: flex;
                 align-items: center;
-                margin: 0px 20px;
-                .icon-wrap {
-                    width: 37px;
-                    height: 37px;
-                    aspect-ratio: 1/1;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    border-radius: 8%;
-                    margin-right: 10px;
+                .menu-item {
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    margin: 0px 20px;
+                    .icon-wrap {
+                        width: 37px;
+                        height: 37px;
+                        aspect-ratio: 1/1;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        border-radius: 8%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .right-menu {
+                .btn-contattaci-top-header {
+                    background: #fff;
+                    padding: 5px 15px;
+                    border-radius: 9rem;
                 }
             }
         }
-        .right-menu {
-            .btn-contattaci-top-header {
-                background: #fff;
-                padding: 5px 15px;
-                border-radius: 9rem;
-            }
-        }
     }
+    /* /#top-header */
+    #main-header {
+        height: calc( 100vh - $height-variables);
+        background-color: red;
+    }
+    /* /#main-header */
 }
