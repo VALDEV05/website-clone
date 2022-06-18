@@ -32,6 +32,12 @@ body {
     position: relative;
 }
 
+body,
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body * {
     list-style: none;
 }
@@ -151,6 +157,7 @@ a.btn {
         background-color: rgba(0, 0, 0, 0.6);
         position: fixed;
         display: flex;
+        z-index: 9;
         .menu-top-header {
             display: flex;
             justify-content: space-between;
@@ -162,6 +169,16 @@ a.btn {
                 display: flex;
                 align-items: center;
             }
+        }
+    }
+    #main-header {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        .vinile-wrap {
+            position: absolute;
+            right: -45%;
+            transform: translateX(-50%);
         }
     }
 }
