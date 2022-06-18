@@ -1,0 +1,163 @@
+/*
+***
+* HAREM WEBSITE
+***
+*  SCSS TABLE OF CONTENTS
+*   
+*  1.0 - Variables
+*  2.0 - Reset
+*  3.0 - Fonts
+*  4.0 - Globals
+*  5.0 - Header
+*  6.0 - Footer
+*  7.0 - Home
+*    7.1 - Hero
+*    7.2 - Newsletter
+*    7.2 - Instagram Feed
+*  8.0 - Category Page
+*  9.0 - Product Page
+*  10.0 - About Page
+*
+***
+*/
+
+
+/* ==========================================================================
+   1.0  Variables
+   ========================================================================== */
+
+body {
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    position: relative;
+}
+
+body * {
+    list-style: none;
+}
+
+
+/* COLORS */
+
+$white: #fff;
+$black: #000;
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+    color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+.wpb_content_element {
+    margin: 0;
+}
+
+.custom-container {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.banner-transparent {
+    background-color: transparent !important;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 62px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+a:focus {
+    outline-style: none;
+}
+
+svg {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+
+/* ==========================================================================
+   3.0  Fonts
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+
+/* ==========================================================================
+   5.0 - Header
+   ========================================================================== */
+
+$height-variables: 62px;
+
+/* 5.1 - Top-Header */
+
+#site-header {
+    #top-header {
+        width: 100%;
+        height: $height-variables;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        .menu-top-header {
+            margin: 0px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .left-menu {
+                display: flex;
+                align-items: center;
+                .menu-item {
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    margin: 0px 20px;
+                    .icon-wrap {
+                        width: 37px;
+                        height: 37px;
+                        aspect-ratio: 1/1;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        border-radius: 8%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .right-menu {
+                .btn-contattaci-top-header {
+                    background: #fff;
+                    padding: 5px 15px;
+                    border-radius: 9rem;
+                }
+            }
+        }
+    }
+    /* /#top-header */
+    #main-header {
+        height: calc( 100vh - $height-variables);
+        background-color: red;
+    }
+    /* /#main-header */
+}
