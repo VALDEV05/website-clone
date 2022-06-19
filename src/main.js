@@ -6,4 +6,6 @@ import "bootstrap"
 
 /* Custom js */
 import './assets/custom'
+
+
 createApp(App).mount('#app')
