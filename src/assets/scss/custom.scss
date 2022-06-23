@@ -28,6 +28,11 @@
 
 $white: #fff;
 $black: #000;
+@mixin gradientTopHeader () {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%);
+}
+
 body {
     background-color: #ffffff;
     font-family: "Lato", sans-serif;
@@ -38,29 +43,22 @@ body,
 html {
     max-width: 100vw;
     overflow-x: hidden;
-}
-
-body * {
-    list-style: none;
-}
-
-html::-webkit-scrollbar {
-    display: none;
-    scrollbar-width: none;
+    a {
+        text-decoration: none;
+        color: $black;
+        &:hover {
+            color: $black;
+        }
+    }
+    ul {
+        list-style: none;
+    }
 }
 
 ul,
 ol {
     margin: 0!important;
     padding: 0!important;
-}
-
-body a {
-    text-decoration: none;
-    color: $black;
-    &:hover {
-        color: $black;
-    }
 }
 
 
@@ -177,7 +175,7 @@ a.btn {
     #top-header {
         height: $height-top-header;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
+        @include gradientTopHeader;
         position: fixed;
         display: flex;
         z-index: 9;
@@ -216,5 +214,13 @@ a.btn {
                 transform: translateY(-50%);
             }
         }
+    }
+}
+
+#site-main {
+    background-color: $black;
+    #chi-siamo {
+        background-image: url('../src/assets/upload/img/sfondo_chi_siamo.jpg');
+        height: 100vh;
     }
 }
