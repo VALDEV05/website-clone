@@ -28,7 +28,7 @@
 
 $white: #fff;
 $black: #000;
-@mixin gradientTopHeader () {
+@mixin gradientTopHeader() {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%);
 }
@@ -57,8 +57,8 @@ html {
 
 ul,
 ol {
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 
@@ -123,7 +123,7 @@ svg {
 }
 
 .row {
-    margin: 0px!important;
+    margin: 0px !important;
 }
 
 
@@ -220,7 +220,28 @@ a.btn {
 #site-main {
     background-color: $black;
     #chi-siamo {
-        background-image: url('../src/assets/upload/img/sfondo_chi_siamo.jpg');
+        background-image: url("../src/assets/upload/img/sfondo_chi_siamo.jpg");
         height: 100vh;
+        background-size: cover;
+        .container-fluid {
+            height: 100vh;
+            .row {
+                height: 100%;
+                .col-md-5 {}
+                .col-md-7 {
+                    height: 100%;
+                    background-color: red;
+                    .container-text-wrap {
+                        height: 100%;
+                        width: 80%;
+                        .container-text {
+                            height: 100%;
+                            border-left: 1px solid $black;
+                            padding: calc($height-top-header + 4px) 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
