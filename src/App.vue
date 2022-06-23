@@ -12,7 +12,7 @@ import SiteHeader from './components/SiteHeader.vue'
 export default {
   name: 'App',
   components: {
-    SiteHeader
+    SiteHeader,
 }
 }
 </script>
