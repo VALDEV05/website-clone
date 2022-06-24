@@ -2,7 +2,13 @@
   <div id="chi-siamo">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-5">AAAA</div>
+        <div class="col-md-5">
+            <div class="container-sx-wrap">
+                <div class="content-text">
+                    <h1 class="text-light">PASSIONE</h1>
+                </div>
+            </div>
+        </div>
         <div class="col-md-7">
           <div class="container-text-wrap">
             <div class="container-text">
