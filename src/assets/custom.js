@@ -1,7 +1,7 @@
 import jQuery from "jquery";
 
 function init() {
-    changePositionButton();
+    consoleLogAuthor();
 }
 
 /* rotazione piatti */
@@ -25,7 +25,7 @@ var lines = new TimelineMax({ yoyo: true, repeatDelay: 2 })
     .to('.facile-text-1', 1, { x: '0%' })
     .to('.facile-text-2', 1, { x: '0%' }, "+=0.3") */
 
-function changePositionButton() {
+function consoleLogAuthor() {
     console.log('Valerio Corda');
 
 }

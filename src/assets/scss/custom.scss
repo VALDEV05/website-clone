@@ -150,6 +150,10 @@ svg {
     margin: 0px !important;
 }
 
+.no-pad {
+    padding: 0!important;
+}
+
 
 /* ==========================================================================
    3.0  Fonts
@@ -246,7 +250,6 @@ $width-container: 85%;
 }
 
 #site-main {
-    background-color: $black;
     #chi-siamo {
         background-image: url("../src/assets/upload/img/sfondo_chi_siamo.jpg");
         height: 100vh;
@@ -308,6 +311,17 @@ $width-container: 85%;
                         }
                     }
                 }
+            }
+        }
+    }
+    .servizio {
+        height: 100vh;
+        .image-servizi {
+            img {
+                max-height: 50vh;
+                width: 50vh;
+                width: 100vw;
+                object-fit: cover;
             }
         }
     }
