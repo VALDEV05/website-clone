@@ -43,10 +43,18 @@ $black: #000;
     font-weight: 200;
 } */
 
+html {
+    scrollbar-width: none;
+}
+
 body {
     background-color: #ffffff;
     font-family: "Lato", sans-serif;
     position: relative;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 body,
