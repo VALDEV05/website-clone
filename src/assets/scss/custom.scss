@@ -27,7 +27,7 @@
    ========================================================================== */
 
 
-/* https://fontsgeek.com/fonts/Minion-Pro-Cond-Italic */
+/* COLORS */
 
 $white: #fff;
 $black: #000;
@@ -35,6 +35,9 @@ $primary-font-strano: 'Merriweather',
 serif;
 $secondary-font-roboto: 'Roboto',
 serif;
+
+/* GRADIENT */
+
 @mixin gradientTopHeader() {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%);
@@ -78,26 +81,30 @@ ol {
     padding: 0 !important;
 }
 
-
-/* COLORS */
-
 h1,
 h2,
 h3,
 h4,
 p,
 span {
+    margin: 0;
     color: $black;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-span,
-.wpb_content_element {
-    margin: 0;
+h1 {
+    font-size: 70px!important;
+}
+
+h2 {
+    font-size: 65px!important;
+}
+
+h3 {
+    font-size: 54px!important;
+}
+
+p {
+    font-size: 20px!important;
 }
 
 .custom-container {
@@ -171,15 +178,16 @@ $width-container: 85%;
 
 /* BUTTON COMMON STYLE */
 
-a.btn {
+
+/* a.btn {
     background: $white !important;
     border-radius: 100px !important;
     padding: 5px 25px !important;
-    /* &:hover {
+    &:hover {
         -webkit-box-shadow: 5px 10px 14px -1px #666666;
         box-shadow: 5px 10px 14px -1px #666666;
-    } */
-}
+    }
+} */
 
 
 /* 5.1 - Top-Header */
@@ -248,16 +256,55 @@ a.btn {
             .row {
                 height: 100%;
                 /* .col-md-5 {} */
-                .col-md-7 {
+                .col-md-6:last-child {
                     height: 100%;
-                    background-color: red;
+                    display: flex;
+                    align-items: center;
                     .container-text-wrap {
                         height: 100%;
                         width: 80%;
+                        /* border: 1px solid red;
+                        position: relative;
+                        .line {
+                            height: 200px;
+                            width: 1px;
+                            background-color: #fff;
+                            display: block;
+                            position: absolute;
+                        } */
                         .container-text {
-                            height: 100%;
-                            border-left: 1px solid $black;
                             padding: calc($height-top-header + 4px) 0;
+                            display: flex;
+                            height: 100%;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: -4%;
+                        }
+                        * {
+                            color: $white;
+                        }
+                        h3 {
+                            font-style: italic;
+                            font-weight: 600;
+                            letter-spacing: 1.4px;
+                        }
+                        .description {
+                            margin-top: 2em;
+                            p {
+                                font-family: $secondary-font-roboto;
+                                font-weight: 300;
+                            }
+                        }
+                        .button-wrap-contattaci {
+                            margin-top: 4%;
+                            .btn-harem-outline {
+                                font-family: "Roboto", serif;
+                                border: 1px solid #fff;
+                                border-radius: 25px;
+                                padding: 8px 30px;
+                                font-weight: 400;
+                                letter-spacing: 1.2px;
+                            }
                         }
                     }
                 }
