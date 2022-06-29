@@ -31,17 +31,14 @@
 
 $white: #fff;
 $black: #000;
+$primary-font-strano: 'Merriweather',
+serif;
+$secondary-font-roboto: 'Roboto',
+serif;
 @mixin gradientTopHeader() {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%);
 }
-
-
-/* @font-face {
-    font-family: 'MinionPro';
-    src: url(../fonts/MinionPro-Regular.otf);
-    font-weight: 200;
-} */
 
 html {
     scrollbar-width: none;
@@ -49,7 +46,6 @@ html {
 
 body {
     background-color: #ffffff;
-    font-family: "Lato", sans-serif;
     position: relative;
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar {
@@ -70,6 +66,9 @@ html {
     }
     ul {
         list-style: none;
+    }
+    * {
+        font-family: 'Merriweather', serif;
     }
 }
 
@@ -191,6 +190,9 @@ a.btn {
     background-color: $white;
     position: relative;
     #top-header {
+        * {
+            font-family: $secondary-font-roboto;
+        }
         height: $height-top-header;
         width: 100%;
         @include gradientTopHeader;
