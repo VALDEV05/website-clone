@@ -1,11 +1,11 @@
 <template>
-  <section class="servizio" id="servizio-01">
+  <section class="servizio" id="servizio-02">
     <div class="container-fluid no-pad">
       <div class="col-md-12 no-pad">
         <div class="immagine-servizio">
-          <img src="../assets/upload/img/harem_mic_01.jpg" />
+          <img src="../assets/upload/img/harem_mix_02.jpg" />
           <div class="nome-servizio">
-            <div class="numero">01</div>
+            <div class="numero">02</div>
             <div class="nome">servizi</div>
           </div>  
         </div>
@@ -18,8 +18,8 @@
       <div class="col-md-10 offset-md-1 col-12">
         <div class="descrizione-servizio">
           <div class="titolo-servizio">
-            <h1 class="titolo">Recording Session</h1>
-            <h4 class="sottotitolo">Registrazione di voci, cori e strumenti</h4>
+            <h1 class="titolo">Produzione inediti</h1>
+            <h4 class="sottotitolo">Produzioni inediti e arrangiamenti</h4>
           </div>
           <div class="corpo-descrizione">
             <p>

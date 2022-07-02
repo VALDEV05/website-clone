@@ -31,9 +31,10 @@
 
 $white: #fff;
 $black: #000;
-$primary-font-strano: 'Merriweather',
+$dark: #464646;
+$primary-font-strano: "Merriweather",
 serif;
-$secondary-font-roboto: 'Roboto',
+$secondary-font-roboto: "Roboto",
 serif;
 
 /* GRADIENT */
@@ -71,7 +72,7 @@ html {
         list-style: none;
     }
     * {
-        font-family: 'Merriweather', serif;
+        font-family: "Merriweather", serif;
     }
 }
 
@@ -92,19 +93,19 @@ span {
 }
 
 h1 {
-    font-size: 70px!important;
+    font-size: 70px !important;
 }
 
 h2 {
-    font-size: 65px!important;
+    font-size: 65px !important;
 }
 
 h3 {
-    font-size: 54px!important;
+    font-size: 54px !important;
 }
 
 p {
-    font-size: 20px!important;
+    font-size: 20px !important;
 }
 
 .custom-container {
@@ -151,7 +152,7 @@ svg {
 }
 
 .no-pad {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 
@@ -315,13 +316,60 @@ $width-container: 85%;
         }
     }
     .servizio {
-        height: 100vh;
-        .image-servizi {
+        .immagine-servizio {
+            position: relative;
             img {
-                max-height: 50vh;
-                width: 50vh;
+                height: auto;
                 width: 100vw;
                 object-fit: cover;
+            }
+            .nome-servizio {
+                position: absolute;
+                bottom: 0;
+                left: 2%;
+                text-align: right;
+                color: $white;
+                font-family: $primary-font-strano;
+                .numero {
+                    font-size: 213px;
+                }
+                .nome {
+                    font-size: 102px;
+                    margin-top: -102px;
+                }
+            }
+        }
+        .descrizione-servizio {
+            margin: 64px 0;
+            .titolo-servizio {
+                font-family: $primary-font-strano;
+                text-align: center;
+                & * {
+                    margin: 0;
+                    width: fit-content;
+                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .titolo {
+                    font-size: 50px !important;
+                    text-transform: uppercase;
+                }
+                .sottotitolo {
+                    font-size: 38px !important;
+                    border-bottom: 2px solid $black;
+                    color: $dark;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .corpo-descrizione {
+            p {
+                margin: 64px 0;
+                color: $dark;
+                font-family: $secondary-font-roboto;
+                font-size: 20px !important;
+                font-weight: 300;
             }
         }
     }
