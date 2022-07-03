@@ -468,3 +468,65 @@ $width-container: 85%;
         }
     }
 }
+
+#site-footer {
+    background-color: $black;
+    height: 400px;
+    position: relative;
+    #back-top {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70px;
+        width: 70px;
+        background-color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        padding-top: 10px;
+    }
+    .col-full {
+        height: 100%;
+        .row {
+            height: 100%;
+        }
+        .row>* {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 10px 0;
+            }
+            #header-menu {
+                .animate-menu {
+                    a {
+                        color: $white;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .left-menu {
+                .menu-item {
+                    display: flex;
+                    align-items: center;
+                    color: $white;
+                    font-size: 15px;
+                }
+            }
+            .legalPages {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                color: $white;
+                a {
+                    color: $white;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
