@@ -184,17 +184,6 @@ $width-container: 85%;
 /* BUTTON COMMON STYLE */
 
 
-/* a.btn {
-    background: $white !important;
-    border-radius: 100px !important;
-    padding: 5px 25px !important;
-    &:hover {
-        -webkit-box-shadow: 5px 10px 14px -1px #666666;
-        box-shadow: 5px 10px 14px -1px #666666;
-    }
-} */
-
-
 /* 5.1 - Top-Header */
 
 #site-header {
@@ -236,15 +225,68 @@ $width-container: 85%;
             overflow: hidden;
         }
         #header-menu {
-            margin: $height-top-header auto;
+            margin: calc($height-top-header + 4px) auto;
         }
         .vinile-wrap-container {
             position: relative;
             .vinile-wrap {
                 position: absolute;
-                right: -25%;
+                right: -15%;
                 top: 50%;
                 transform: translateY(-50%);
+                .servizi-wrap {
+                    position: relative;
+                    z-index: 9999;
+                    #servizio-01,
+                    #servizio-02 {
+                        position: absolute;
+                        top: 50%;
+                        left: -75%;
+                        transform: translate(50%, -50%);
+                        .testo-servizio {
+                            width: fit-content;
+                            position: absolute;
+                            text-align: right;
+                            color: rgba(0, 0, 0, 0.07);
+                            left: -55%;
+                            font-family: $primary-font-strano;
+                            .numero {
+                                font-size: 213px;
+                            }
+                            .nome {
+                                font-size: 82px;
+                                margin-top: -102px;
+                            }
+                        }
+                        .titolo-servizio {
+                            a {
+                                width: fit-content;
+                                font-style: italic;
+                                font-size: 40px;
+                                font-family: $primary-font-strano;
+                                text-transform: uppercase;
+                                margin-left: -20%;
+                                margin-top: 16px;
+                                display: block;
+                                border-bottom: 2px solid $black;
+                            }
+                        }
+                    }
+                    #servizio-02 {
+                        display: none;
+                    }
+                }
+                .controlli-wrap {
+                    z-index: 99999;
+                    position: absolute;
+                    top: 50%;
+                    left: 5%;
+                    transform: translateY(-50%);
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
             }
         }
     }
@@ -335,7 +377,7 @@ $width-container: 85%;
                                     text-transform: uppercase;
                                     &:hover {
                                         color: $white;
-                                        transition: all 1s;
+                                        transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
                                     }
                                     &:nth-child(2) {
                                         margin-left: 15%;
@@ -409,4 +451,15 @@ $width-container: 85%;
             }
         }
     }
+}
+
+.underline {
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 0;
+    height: calc(1px + 0.6vw);
+    background-color: #eefe06;
+    z-index: -1;
 }
