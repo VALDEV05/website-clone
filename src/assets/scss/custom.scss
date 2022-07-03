@@ -226,6 +226,22 @@ $width-container: 85%;
         }
         #header-menu {
             margin: calc($height-top-header + 4px) auto;
+            .animate-menu {
+                margin: 20px 0;
+                a {
+                    font-size: 25px;
+                }
+                span.underline {
+                    display: block;
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    width: 0;
+                    height: calc(1px + 0.6vw);
+                    background-color: $black;
+                    z-index: -1;
+                }
+            }
         }
         .vinile-wrap-container {
             position: relative;
@@ -451,15 +467,4 @@ $width-container: 85%;
             }
         }
     }
-}
-
-.underline {
-    display: block;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    width: 0;
-    height: calc(1px + 0.6vw);
-    background-color: #eefe06;
-    z-index: -1;
 }

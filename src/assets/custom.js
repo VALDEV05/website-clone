@@ -29,7 +29,7 @@ function animateMenu() {
             width: "0%",
             left: "0%"
         }, {
-            width: "calc(100% + 20px)",
+            width: "calc(60% + 20px)",
             marginLeft: "-20px",
             duration: 1
         });
@@ -38,7 +38,7 @@ function animateMenu() {
     jQuery(".animate-menu").mouseleave(function() {
         var tlunderline = new TimelineMax();
         tlunderline.fromTo(jQuery(this).find(".underline"), 0.5, {
-            width: "calc(100% + 20px)",
+            width: "calc(60% + 20px)",
             right: "100%"
         }, {
             width: "0%",
