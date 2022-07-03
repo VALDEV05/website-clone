@@ -3,9 +3,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
-          <div class="container-sx-wrap">
-            <div class="content-text">
-              <h1 class="text-light">PASSIONE</h1>
+          <div class="col-full">
+            <div class="container-sx-wrap">
+              <div class="content-text">
+                <h1 class="chi-siamo-link">PASSIONE</h1>
+                <h1 class="chi-siamo-link">Dedizione</h1>
+                <h1 class="chi-siamo-link">musica</h1>
+              </div>
             </div>
           </div>
         </div>

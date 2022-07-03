@@ -312,6 +312,42 @@ $width-container: 85%;
                         }
                     }
                 }
+                .col-md-6 {
+                    height: 100%;
+                    .col-full {
+                        height: 100%;
+                        .container-sx-wrap {
+                            height: 100%;
+                            .content-text {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: end;
+                                padding: 15% 0;
+                                .chi-siamo-link {
+                                    width: fit-content;
+                                    font-size: 106px !important;
+                                    font-family: $secondary-font-roboto;
+                                    text-decoration: none;
+                                    color: transparent;
+                                    -webkit-text-stroke: 4px #fff;
+                                    transition: 0.1s ease;
+                                    text-transform: uppercase;
+                                    &:hover {
+                                        color: $white;
+                                        transition: all 1s;
+                                    }
+                                    &:nth-child(2) {
+                                        margin-left: 15%;
+                                    }
+                                    &:last-child {
+                                        margin-left: 5%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
