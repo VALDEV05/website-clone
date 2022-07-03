@@ -14,7 +14,7 @@
       Lun - Ven 10.00/19.00
     </div>
     <!-- /#menu-item-2 -->
-    <div id="menu-item-3" class="menu-item">
+    <div id="menu-item-3" class="menu-item sendEmailHarem">
       <div class="icon-wrap">
         <icon_mail></icon_mail>
       </div>
