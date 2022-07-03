@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-10 offset-md-1">
           <div class="row w-100">
-            <div class="col-2">
+            <div class="col-2 back-top">
               <img src="../assets/upload/img/logo_small-white.png" alt="" />
             </div>
             <div class="col-2">

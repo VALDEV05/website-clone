@@ -9,6 +9,7 @@ function init() {
     consoleLogAuthor();
     animateMenu();
     controlVinile();
+    scrolltToTop();
     /* rotazioneVinile(); */
 }
 
@@ -70,6 +71,25 @@ function controlVinile() {
         count = count + 1;
         tl.to(vinile, { rotation: "+=120" }, "+=1")
             .to(servizio_01, { y: "-100%", x: "70%" }, "+1");
+    });
+}
+
+function scrolltToTop() {
+    jQuery("#back-top").click(function() {
+        jQuery("html, body").animate({
+                scrollTop: 0,
+            },
+            "slow"
+        );
+        return false;
+    });
+    jQuery(".back-top").click(function() {
+        jQuery("html, body").animate({
+                scrollTop: 0,
+            },
+            "slow"
+        );
+        return false;
     });
 }
 jQuery(document).ready(init);
