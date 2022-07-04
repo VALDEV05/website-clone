@@ -1,5 +1,5 @@
 <template>
-  <section class="servizio" id="servizio-03">
+  <section class="servizio" id="section-servizio-03">
     <div class="container-fluid no-pad">
       <div class="col-md-12 no-pad">
         <div class="immagine-servizio">

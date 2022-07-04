@@ -5,11 +5,11 @@
         <a href="#">Home</a>
         <span class="underline"></span>
       </li>
-      <li class="animate-menu">
+      <li class="animate-menu chi-siamo-menu">
         <a href="#">Chi Siamo</a>
         <span class="underline"></span>
       </li>
-      <li class="animate-menu">
+      <li class="animate-menu contatti-menu">
         <a href="#">Contatti</a>
         <span class="underline"></span>
       </li>
