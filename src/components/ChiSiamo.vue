@@ -6,9 +6,9 @@
           <div class="col-full">
             <div class="container-sx-wrap">
               <div class="content-text">
-                <h1 class="chi-siamo-link">PASSIONE</h1>
-                <h1 class="chi-siamo-link">Dedizione</h1>
-                <h1 class="chi-siamo-link">musica</h1>
+                <h1 class="chi-siamo-link top">PASSIONE</h1>
+                <h1 class="chi-siamo-link middle">Dedizione</h1>
+                <h1 class="chi-siamo-link bottom">musica</h1>
               </div>
             </div>
           </div>

@@ -254,7 +254,8 @@ $width-container: 85%;
                     position: relative;
                     z-index: 9999;
                     #servizio-01,
-                    #servizio-02 {
+                    #servizio-02,
+                    #servizio-03 {
                         position: absolute;
                         top: 50%;
                         left: -75%;
@@ -288,11 +289,13 @@ $width-container: 85%;
                             }
                         }
                     }
-                    #servizio-02 {
-                        display: none;
+                    #servizio-02,
+                    #servizio-03 {
+                        opacity: 0;
                     }
                 }
                 .controlli-wrap {
+                    display: none!important;
                     z-index: 99999;
                     position: absolute;
                     top: 50%;
